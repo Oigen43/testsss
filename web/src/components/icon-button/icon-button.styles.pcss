@@ -1,0 +1,22 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: none;
+  border-radius: 25px;
+  color: var(--gray-dark);
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(249, 249, 249, 0.2);
+    color: #3f3f3f;
+  }
+
+  &.disabled {
+    color: var(--gray);
+    pointer-events: none;
+  }
+}
